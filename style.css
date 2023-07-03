@@ -9,6 +9,7 @@
 }
 
 body{
+    height: 2032px;
     margin: 0px;
     padding: 0px;
 
@@ -163,6 +164,7 @@ footer nav{
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 320px;
 }
     
 footer h5{
@@ -174,6 +176,7 @@ footer h5{
     background-color: var(--Preto-dnc);
     border-radius: 10px;
     padding: 0px 10px 0px 10px;
+    margin-bottom: 15px;
 }
 footer ul li{
     text-align: center;
@@ -186,4 +189,77 @@ footer ul li{
 footer ul li a{
     color: white;
     text-decoration: none;
+}
+footer ul li a:hover{
+    color: var(--cinza-hover);
+
+}
+
+footer .endereco{
+    font-weight: 600;
+    font-size: 18px;
+    font-family: var(--fonte-padrao);
+    color: white;
+    text-align: center;
+    width: 30%;
+}
+footer .linha2{
+    height: 35px;
+   display: flex; 
+   justify-content: center;
+   margin: 20px 0px 200px 0px;
+}
+footer .linha2 a{
+    font-family: var(--fonte-padrao);
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    
+}
+footer .linha2 a:first-child{
+    border-right: 2px solid white;
+}
+
+footer .linha2 a:hover{
+    color: var(--cinza-hover);
+}
+
+/*Ajustando tela*/
+
+@media only screen and (max-width:600px){
+    
+    #principal{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    #menu{
+        flex-direction: column;
+        width: 100%;
+        margin: 0px;
+    }
+    #menu a{
+        height: 50px;
+        align-items: center;
+    }
+    #principal button{
+        width: 100%;
+        margin: 0px;
+    }
+    section h1{
+        font-size: 36px;
+    }
+    section h2{
+        font-size: 18px;
+    }
+    form{
+        width: 95%;
+        font-size: 20px;
+    }
+    .checkbox-itens label{
+        font-size: 15px;
+    }
+
 }
